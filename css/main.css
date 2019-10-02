@@ -4,62 +4,143 @@ body section {
 }
 
 .home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/home.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     height: 100vh;
-    overflow: hidden;
-    width: 100%;
 }
-.home img {
-    position: absolute;
-    height: 100%;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.home::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #010101;
-    opacity: .3;
-    z-index: 1;
-}
-
 .container {
+    margin: 0 auto;
     position: relative;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    justify-content: center;
     z-index: 10;
+    height: 100%;
 }
 
 .home h2 {
     color: #c55432;
     font-family: cursive;
-    font-size: 28px;
+    font-size: 20px;
+    line-height: 24px;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .home h1 {
     color: #c55432;
     font-family: cursive;
-    font-size: 32px;
+    font-size: 24px;
+    line-height: 32px;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .home div.social {
     display: flex;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 12px;
 }
 
 .home div.social img {
     position: relative;
     height: 25px;
     width: 25px;
-    left:auto;
-    transform: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.home p, .home h1, .home h2 {
+    text-align: center;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-right: 10px;
+}
+.message {
+    width: 25%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.message textarea {
+    resize: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    height: 115px;
+    width: 100%;
+    padding: 7px 12px;
+}
+
+.userform {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form.userform button {
+    background-color: #61bdb2;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+input[type=text], input[type=tel] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.dashed {
+    border-bottom: 2px dashed #d1d1d1;
+    margin: 50px 0 20px 0;
+    width: 100%;
+}
+
+p.footer {
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.container img {
+    width: 10px;
+    height: auto;
+    margin: 15px 0;
+}
+
+.home p {
+    line-height: 24px;
+}
+
+.italic {
+    font-style: italic;
 }

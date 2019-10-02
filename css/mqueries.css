@@ -1,22 +1,81 @@
-@media only screen and (min-width: 320px) and (max-width: 479px){
-   
+@media screen and (min-width: 320px) and (max-width: 479px){
+    .container {
+        width: 90%;
+    }
+
+    .inputs {
+        flex-direction: column;
+    }
+
+    .field {
+        width: 100%;
+        margin-right: 0;
+    }
+    .message {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px){
-   
+@media screen and (min-width: 480px) and (max-width: 767px){
+    .container {
+        width: 90%;
+    }
+
+    .inputs {
+        flex-direction: column;
+    }
+
+    .field {
+        width: 100%;
+        margin-right: 0;
+    }
+    .message {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px){
-  
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .container {
+        width: 720px; 
+    }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1399px){
-  
+@media screen and (min-width: 992px) {
+    .container {
+        width: 960px; 
+    }
+    .home div.social img {
+        height: 35px;
+        width: 35px;
+    }
+    .home h1 {
+        font-size: 34px;
+        line-height: 48px;
+    }
+
+    .home h2 {
+        font-size: 30px;
+        line-height: 42px;
+    }
 }
 
 @media screen and (min-width: 1900px) {
-    .home img {
-        width: 100%;
-        height: auto;
+    .container {
+        width: 1140px; 
     }
-  }
+    .home div.social img {
+        height: 35px;
+        width: 35px;
+    }
+    .home h1 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    .home h2 {
+        font-size: 34px;
+        line-height: 48px;
+    }
+}

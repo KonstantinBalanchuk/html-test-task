@@ -14,22 +14,43 @@
 
 <body>
     <section class="home">
-        <img src="./img/home.jpg" alt="background image">
         <div class="container">
             <h1>Call us +1 234 555 6677</h1>
             <p>27 Ba Trieu St. Hue city, Viet Nam</p>
             <div class="social">
-                <img src="./img/facebook.png" alt="facebook">
-                <img src="./img/twitter.png" alt="twitter">
-                <img src="./img/linkedin.png" alt="linkedin">
-                <img src="./img/pinterest.png" alt="pinterest">
+                <a href="https://www.facebook.com">
+                    <img src="./img/facebook.png" alt="facebook">
+                </a>
+                <a href="https://www.twitter.com/">
+                    <img src="./img/twitter.png" alt="twitter">
+                </a>
+                <a href="https://www.linkedin.com/feed/">
+                    <img src="./img/linkedin.png" alt="linkedin">
+                </a>
+                <a href="https://www.pinterest.com">
+                    <img src="./img/pinterest.png" alt="pinterest">
+                </a> 
             </div>
             <h2>Send message</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae non consectetur dolores molestiae
+            <p class="italic">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae non consectetur
+                dolores molestiae
                 minima quisquam sunt assumenda eos quod vero.</p>
-            <form action="">
-                <input type="text">
+            <form action="" class="userform">
+                <div class="inputs">
+                    <div class="field">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your email" required>
+                        <input type="tel" name="phone" placeholder="Phone" required>
+                    </div>
+                    <div class="message">
+                        <textarea placeholder="Message" name="message"></textarea>
+                    </div>
+                </div>
+                <button type="submit" value="submit">Learn more</button>
             </form>
+            <div class="dashed"></div>
+            <p class="footer">dizaino<sup>TM</sup> creative design & development by junoteam</p>
+            <img src="./img/shift.png" alt="up arrow">
         </div>
     </section>
 </body>
